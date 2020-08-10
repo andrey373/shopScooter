@@ -13,8 +13,8 @@ let compileFileStyle = [
 ];
 
 let concatFileStyle = [
-    './css/style.css',
-    './css/responsive.css'
+    './src/css/style.css',
+    './src/css/responsive.css'
 ];
 
 let concatFileScript = [
@@ -22,9 +22,9 @@ let concatFileScript = [
 ];
 
 gulp.task('compileStyle', () => {
-    return gulp.src(compileFileStyle)
+    return gulp.src(concatFileStyle)
 
-    .pipe(less())
+    // .pipe(less())
     .pipe(autoprefixer({
         cascade: false
     }))
@@ -62,7 +62,7 @@ gulp.task('browser-Sync', () => {
         }
     });
 
-    gulp.watch('./css/*less', gulp.parallel('compileStyle'));
+    gulp.watch(concatFileStyle, gulp.parallel('compileStyle'));
    
     gulp.watch("./*.html").on('change', browserSync.reload);
     gulp.watch(concatFileScript).on('change', browserSync.reload);
