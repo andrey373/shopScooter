@@ -7,6 +7,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/fonts.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/slick.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" media="all">
 </head>
@@ -91,8 +92,52 @@
 
 	<!--  start section slide -->
 
+	<section class="block-slider">
+		<div class="container">
+			<div class="block-slider__inner">
+				<div class="block-slider__slider">
+					<a class="block-slider__slider-item" href="#">
+						<img class="block-slider__slider-img" src="img/slider-img/ultra0.jpg" alt="slide picture">
+					</a>
+					<a class="block-slider__slider-item" href="#">
+						<img class="block-slider__slider-img" src="img/slider-img/ultra.jpg" alt="slide picture">
+					</a>
+					<a class="block-slider__slider-item" href="#">
+						<img class="block-slider__slider-img" src="img/slider-img/ultra2.jpg" alt="slide picture">
+					</a>
+					<a class="block-slider__slider-item" href="#">
+						<img class="block-slider__slider-img" src="img/slider-img/ultra0.jpg" alt="slide picture">
+					</a>
+					<a class="block-slider__slider-item" href="#">
+						<img class="block-slider__slider-img" src="img/slider-img/ultra.jpg" alt="slide picture">
+					</a>
+					<a class="block-slider__slider-item" href="#">
+						<img class="block-slider__slider-img" src="img/slider-img/ultra2.jpg" alt="slide picture">
+					</a>
+				</div>
 
-	<script src="./js/jquery-3.4.1.min.js"></script>
-	<script src="./js/main.js"></script>
+				<a class="block-slider__card-product sale-card" href="#">
+					<div class="sale-card__slide">
+						<div class="sale-card__info">акция</div>
+						<div class="sale-card__price">
+							<div class="sale-card__price-new">190 000</div>
+							<div class="sale-card__price-old">225 000</div>
+						</div>
+					</div>	
+						<img class="sale-card__img" src="img/content/cardsale.png" alt="picture of product">
+						<h5 class="sale-card__img-title">Лодочный мотор Suzuki DF9.9BRS</h5>
+						<p class="sale-card__sale-limit">
+							Акция действует до 
+							<span class="sale-limit__date">31.08.2020</span>
+						</p>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/controlSlide.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

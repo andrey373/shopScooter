@@ -30,6 +30,13 @@ a{
     color:  #2F3035;
 }
 
+button{
+    border: 0;
+    background: none;
+    padding: 0;
+    outline: 0;
+}
+
 /* end  fundamental style */
 
 
@@ -176,3 +183,216 @@ a{
 
 
 /*  start section slide */
+
+.block-slider{
+    padding-top: 80px;
+}
+
+.block-slider__inner{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.block-slider__slider{
+    max-width: 870px;
+}
+
+.block-slider__slider-item{
+    display: block;
+    width: 870px;
+    height: 400px;
+}
+
+.block-slider__slider-img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*  ====================================== */
+/* redefine style for slide arrow and dots */
+
+
+.block-slider__btn-slide{
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 10;
+    background: none;
+    border: 0;
+    outline: 0; 
+}
+
+.block-slider__next{
+    right: 15px;
+}
+.block-slider__prev{
+    left: 15px;
+}
+
+.slick-dots{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    font-size: 0;
+}
+
+.slick-dots > li > button {
+    border: 1px solid #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.slick-dots .slick-active > button{
+    background-color: #fff;
+}
+/* =============================== */
+
+.sale-card{
+    display: block;
+    max-width: 265px;
+    text-align: center;
+    position: relative;
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.sale-card__slide{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.sale-card__info{
+    padding: 8px 20px;
+    color: #fff;
+    background-color: #1C62CD;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.sale-card__price-new{
+    color: #1C62CD;
+    font-family: 'Barlow-Bold', sans-serif;
+    font-size: 27px;
+    line-height: 32px;
+    margin-bottom: 7px;
+    margin-right: 8px;
+    text-align: right;
+    padding-right: 20px;
+    position: relative;
+    
+}
+
+.sale-card__price-new::after{
+    content: "";
+    width: 15px;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    background: url("../../img/logotip/rub.svg")no-repeat;
+    background-position-y: center;
+}
+
+.sale-card__price-old{
+    font-family: 'Barlow-Regular', sans-serif;
+    color: #C4C4C4;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    padding-right: 15px;
+    position: relative;
+    margin-right: 5px;
+}
+
+.sale-card__price-old::before{
+    content: "";
+    position: absolute;
+    top: 0; 
+    right: -15px;
+    width: 100%;
+    height: 100%;
+    background: url("../../img/logotip/oldprice.svg")no-repeat;    
+    background-size: cover;
+    background-position: center;
+}
+
+.sale-card__price-old::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 8px;
+    height: 17px;
+    background: url("../../img/logotip/rubgrey.svg")no-repeat;
+    background-position-y: center;
+}
+
+.sale-card__img{
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+.sale-card__img-title{
+    font-family: 'SFProDisplay-Bold', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 7px;
+}
+
+.sale-card__sale-limit{
+    padding: 25px 0;
+    background-color: #F0F0F4;
+}
+
+.sale-limit__date{
+    color: #1C62CD;
+    font-family: 'Barlow-Bold', sans-serif;
+}
+
+

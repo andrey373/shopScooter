@@ -18,7 +18,8 @@ let concatFileStyle = [
 ];
 
 let concatFileScript = [
-    './js/main.js'
+    './js/main.js',
+    './js/controlSlide.js'
 ];
 
 gulp.task('compileStyle', () => {
