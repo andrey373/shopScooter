@@ -115,17 +115,22 @@ a{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 53px;
     background-color: #F0F0F4;
+    line-height: 0;
+}
+
+.menu-categories__item{
     position: relative;
 }
 
-
 .menu-categories__link{
     display: inline-block;
+    max-width: 130px;
     padding: 15px 0;
-    position: absolute;
-    transform: translate(-42%, -50%);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: normal;
 }
 
 .menu-categories__link::after{
@@ -148,5 +153,8 @@ a{
 }
 
 .menu-categories__link:hover{
-    font-family: 'SFProDisplay-Semibold', sans-serif;
+    color: #070707;
 }
+
+
+/*  start section slide */
