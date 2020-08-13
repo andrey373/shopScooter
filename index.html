@@ -20,13 +20,13 @@
 					<nav class="menu">
 						<ul class="menu__list">
 							<li class="menu__list-item">
-								<a class="menu__list-link"href="#">Магазины</a>
+								<a class="menu__list-link" href="#">Магазины</a>
 							</li>
 							<li class="menu__list-item">
-								<a class="menu__list-link"href="#">Акции</a>
+								<a class="menu__list-link" href="#">Акции</a>
 							</li>
 							<li class="menu__list-item">
-								<a class="menu__list-link"href="#">Доставка и оплата</a>
+								<a class="menu__list-link" href="#">Доставка и оплата</a>
 							</li>			
 						</ul>
 					</nav>
@@ -123,18 +123,67 @@
 							<div class="sale-card__price-new">190 000</div>
 							<div class="sale-card__price-old">225 000</div>
 						</div>
-					</div>	
+					</div>
 						<img class="sale-card__img" src="img/content/cardsale.png" alt="picture of product">
 						<h5 class="sale-card__img-title">Лодочный мотор Suzuki DF9.9BRS</h5>
 						<p class="sale-card__sale-limit">
 							Акция действует до 
-							<span class="sale-limit__date">31.08.2020</span>
+							<time class="sale-limit__date" datetime="2020-08-31">31.08.2020</time>
 						</p>
 				</a>
 			</div>
 		</div>
 	</section>
 
+
+<!-- section search and tabs -->
+
+<section class="search-block">
+	<div class="container">
+		<div class="search-block__inner">
+			<div class="search-block__tabs-btn">
+				<a class="tabs-btn__link tabs-btn__link--active" data-search-tab="tab-num" href="#tab-num">Поиск по номеру</a>
+				<a class="tabs-btn__link" data-search-tab="tab-brand" href="#tab-brand">Поиск по марке</a>
+				<a class="tabs-btn__link" data-search-tab="tab-name" href="#tab-name">Поиск по названию товара</a>
+			</div>
+			<div class="search-block__content">
+				<div id="tab-num" class="search-block__content-item   search-block__content-item--active">
+					<form class="content-item__form" action="#" method="POST">
+						<input class="content-item__form-text" type="text" placeholder="Введите номер">
+						<input class="content-item__form-btn" type="submit" value="искать">
+					</form>
+				</div>
+				<div id="tab-brand" class="search-block__content-item">
+					<form class="content-item__form" action="#" method="POST">
+						<input class="content-item__form-text" type="text" placeholder="Введите марку">
+						<input class="content-item__form-btn" type="submit" value="искать">
+					</form>
+				</div>
+				<div id="tab-name" class="search-block__content-item">
+					<form class="content-item__form" action="#" method="POST">
+						<input class="content-item__form-text" type="text" placeholder="Введите название товара ">
+						<input class="content-item__form-btn" type="submit" value="искать">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/controlSlide.js"></script>
