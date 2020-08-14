@@ -120,8 +120,8 @@
 					<div class="sale-card__slide">
 						<div class="sale-card__info">акция</div>
 						<div class="sale-card__price">
-							<div class="sale-card__price-new">190 000</div>
-							<div class="sale-card__price-old">225 000</div>
+							<div class="sale-card__price-new price-bold">190 000</div>
+							<div class="sale-card__price-old price-regular">225 000</div>
 						</div>
 					</div>
 						<img class="sale-card__img" src="img/content/cardsale.png" alt="picture of product">
@@ -142,12 +142,12 @@
 	<div class="container">
 		<div class="search-block__inner">
 			<div class="search-block__tabs-btn">
-				<a class="tabs-btn__link tabs-btn__link--active" data-search-tab="tab-num" href="#tab-num">Поиск по номеру</a>
-				<a class="tabs-btn__link" data-search-tab="tab-brand" href="#tab-brand">Поиск по марке</a>
-				<a class="tabs-btn__link" data-search-tab="tab-name" href="#tab-name">Поиск по названию товара</a>
+				<a class="press-tab press-tab--active tabs-btn__link" data-search-tab="tab-num" href="#tab-num">Поиск по номеру</a>
+				<a class="press-tab tabs-btn__link" data-search-tab="tab-brand" href="#tab-brand">Поиск по марке</a>
+				<a class="press-tab tabs-btn__link" data-search-tab="tab-name" href="#tab-name">Поиск по названию товара</a>
 			</div>
 			<div class="search-block__content">
-				<div id="tab-num" class="search-block__content-item   search-block__content-item--active">
+				<div id="tab-num" class="press-tab-content--active search-block__content-item">
 					<form class="content-item__form" action="#" method="POST">
 						<input class="content-item__form-text" type="text" placeholder="Введите номер">
 						<input class="content-item__form-btn" type="submit" value="искать">
@@ -233,6 +233,60 @@
 	</div>
 </div>
 
+
+<!--   section of popular product -->
+
+<div class="block-product">
+	<div class="container">
+		<div class="block-product__inner">
+			<div class="wraper-block-product">
+				<div class="block-product__tabs">
+					<a class="press-tab press-tab--active block-product__tabs-link" href="#">запчасти</a>
+					<a class="press-tab block-product__tabs-link" href="#">моторы</a>
+					<a class="press-tab block-product__tabs-link" href="#">шины</a>
+					<a class="press-tab block-product__tabs-link" href="#">электроника</a>
+					<a class="press-tab block-product__tabs-link" href="#">инструменты</a>
+					<a class="press-tab block-product__tabs-link" href="#">аксессуары</a>
+				</div>
+
+				<div class="block-product__content-product">
+					<div class="press-tab-content--active block-product__card-product">
+						<div class="card-product__slider">
+							<div class="card-product__slider-item">
+								<div class="wraper__slider-link wraper__slider-message-notify">
+									<button class="card-product__slider-favorites" type="button"></button>
+									<a class="card-product__slider-link card-product-sale" href="#">
+										<p class="card-product__slider-hover-text">посмотреть товар</p>
+										<img class="card-product__slider-img" src="img/content/bag001.png" alt="picture of card product">
+										<h4 class="card-product__slider-title">Водонепроницаемый
+											Рюкзак</h4>
+										<p class="price-bold card-product__slider-price">9 800 ₽</p>
+										<p class="card-product__notify-text">нет в наличии</p>
+									</a>
+									<button class="card-product__slider-basket" type="button">
+										<img class="card-product__basket-img" src="img/logotip/basket-white.svg" alt="picture of basket">
+									</button>
+									<a class="card-product__notify-message" href="#">
+										<span class="notify-message__line">Сообщить о поступлении</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block-product__card-product"></div>
+					<div class="block-product__card-product"></div>
+					<div class="block-product__card-product"></div>
+					<div class="block-product__card-product"></div>
+					<div class="block-product__card-product"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
 <br>
 <br>
 <br>
@@ -251,3 +305,12 @@
 	<script src="js/main.js"></script>
 </body>
 </html>
+<!-- <div class="wraper-block-product">
+	<div class="block-product__tabs">
+		<a class="press-tab press-tab--active block-product__tabs-link" href="#">запчасти</a>
+	</div>
+
+	<div class="block-product__content-product">
+		<div class="press-tab-content--active block-product__card-product"></div>
+	</div>
+</div> -->
