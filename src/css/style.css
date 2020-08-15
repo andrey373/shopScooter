@@ -199,18 +199,19 @@ button{
 }
 
 
-/*  ====================================== */
 /* redefine style for slide arrow and dots */
 
 
-.block-slider__btn-slide{
+.block-slider__btn-slide,
+.block-product__btn-slide{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
     background: none;
     border: 0;
-    outline: 0; 
+    outline: 0;
+    line-height: 0; 
 }
 
 .block-slider__next{
@@ -241,7 +242,7 @@ button{
 .slick-dots .slick-active > button{
     background-color: #fff;
 }
-/* =============================== */
+/* ------------------------------------ */
 
 .sale-card{
     display: block;
@@ -379,13 +380,14 @@ button{
     flex-direction: row;
 }
 
-.search-block__content-item{
+/* style for all block tabs */
+.press-tab-content{
     display: none;
 }
-.search-block__content-item.press-tab-content--active{
+.press-tab-content.press-tab-content--active{
     display: block;
 }
-
+/* ------------------------- */
 .content-item__form-text{
     width: 100%;
     background-color: #F0F0F4;
@@ -495,6 +497,34 @@ button{
     padding-top: 50px
 }
 
+.block-product__inner-title{
+    font-family: 'Barlow-Bold', sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+.block-product__tabs{
+    margin-bottom: 25px;
+}
+
+.block-product__tabs-link + .block-product__tabs-link{
+    margin-left: 50px;
+}
+
+.block-product__tabs-link{
+    font-family: 'SFProDisplay-Medium', sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom .3s;
+}
+
+.block-product__tabs-link.press-tab--active{
+    border-bottom: 2px solid #1C62CD;
+}
+
 .wraper__slider-link{
     position: relative;
     width: 271px;
@@ -509,8 +539,9 @@ button{
     transition: 0.3s;
 }
 
-.card-product__slider-img{
+.card-product__slider-link .card-product__slider-img{
     max-width: 100%;
+    display: inline;
 }
 
 .card-product__slider-title{
@@ -547,7 +578,7 @@ button{
     right: 0;
     background-color: #1C62CD;
     border-radius: 10px 0px 0px 0px;
-    padding: 10px 16px 8px 14px;
+    padding: 10px 15px 8px;
     line-height: 0;
     cursor: pointer;
 }
@@ -603,7 +634,7 @@ button{
 .card-product__notify-text{
     display: none;
     font-family: 'SFProDisplay-Bold', sans-serif;
-    line-height: 21px;
+    line-height: 24px;
     color: #2F3035;
 }
 
@@ -643,3 +674,29 @@ button{
 .wraper__slider-link.wraper__slider-message-notify .card-product__slider-link{
     padding-bottom: 58px;
 }
+
+/* settings style for slide popular produkt   */
+
+.product-slider__next-black{
+    right: 0px;
+}
+
+.product-slider__prev-black{
+    left: 0px;
+}
+/* ------------------------- */
+
+.block-product__show-more{
+    text-align: center;
+}
+.block-product__show-more-link{
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 15px 45px;
+    background-color: #F0F0F4; 
+    margin-top: 20px;
+
+}
+
