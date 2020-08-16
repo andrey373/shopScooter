@@ -84,7 +84,7 @@ button{
     position: absolute;
     top: 0;
     left: 0;
-    background:url("../../img/logotip/location.svg")no-repeat;
+    background:url("../img/logotip/location.svg")no-repeat;
     background-position: top center;
 }
 
@@ -292,7 +292,7 @@ button{
     height: 35px;
     position: absolute;
     right: 0;
-    background: url("../../img/logotip/rub.svg")no-repeat;
+    background: url("../img/logotip/rub.svg")no-repeat;
     background-position-y: center;
 }
 
@@ -313,7 +313,7 @@ button{
     right: -15px;
     width: 100%;
     height: 100%;
-    background: url("../../img/logotip/oldprice.svg")no-repeat;    
+    background: url("../img/logotip/oldprice.svg")no-repeat;    
     background-size: cover;
     background-position: center;
 }
@@ -324,7 +324,7 @@ button{
     right: 0;
     width: 8px;
     height: 17px;
-    background: url("../../img/logotip/rubgrey.svg")no-repeat;
+    background: url("../img/logotip/rubgrey.svg")no-repeat;
     background-position-y: center;
 }
 
@@ -486,7 +486,7 @@ button{
 }
 
 .categories-inner__item-read-more::after{
-    content: url("../../img/logotip/arrowProduct.svg");
+    content: url("../img/logotip/arrowProduct.svg");
     padding-left: 3px;
 }
 
@@ -563,13 +563,13 @@ button{
     position: absolute;
     width: 24px;
     height: 22px;
-    background: url("../../img/logotip/card-heart.svg")no-repeat;
+    background: url("../img/logotip/card-heart.svg")no-repeat;
     top: 0;
     right: 0;
 }
 
 .card-product__slider-favorites--active::after{
-    background: url("../../img/logotip/card-heart-active.svg")no-repeat;
+    background: url("../img/logotip/card-heart-active.svg")no-repeat;
 }
 
 .card-product__slider-basket{
@@ -700,3 +700,15 @@ button{
 
 }
 
+/* style for block baner */
+
+.baner{
+    margin-top: 80px;
+    line-height: 0;
+}
+
+/* style for block product */
+
+.block-product-two{
+    padding-top: 80px;
+}
