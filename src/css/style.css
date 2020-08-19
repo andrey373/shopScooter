@@ -549,6 +549,7 @@ button{
 .card-product__slider-title{
     font-weight: normal;
     padding: 14px 0 25px;
+    font-size: 18px;
     line-height: 21px;
 }
 
@@ -597,7 +598,11 @@ button{
     border-radius: 3px;
     padding: 18px 21px;
     position: absolute;
+    width: 230px;
     top: 30%;
+    left: 0;
+    right: 0;
+    margin: auto;
     z-index: 10;
     line-height: 24px;
     opacity: 0;
