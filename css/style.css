@@ -29,6 +29,7 @@ body {
 a{
     color:  #2F3035;
     display: inline-block;
+    color: inherit;
 }
 
 button{
@@ -36,6 +37,7 @@ button{
     background: none;
     padding: 0;
     outline: 0;
+    color: inherit;
 }
 
 .price-bold{
@@ -944,4 +946,35 @@ button{
 
 .social-list__item + .social-list__item{
     margin-left: 30px;
+}
+
+
+/* ---------------------- */
+/*  page categories */
+/* ----------------------- */
+
+/*  style for breadcrumbs */
+
+.breadcrumbs{
+    margin: 45px 0 40px;
+}
+
+.breadcrumbs__list-item{
+    display: inline-block;
+    font-size: 15px;
+    color: #c4c4c4; 
+    line-height: 18px;
+    position: relative;
+    padding-right: 16px;
+    margin-right: 10px;
+}
+
+.breadcrumbs__list-item:not(:last-child)::after{
+    content: "";
+    position: absolute;
+    background: url("../img/logotip/arrowProduct.svg")no-repeat;
+    width: 6px;
+    height: 10px;
+    right: 0;
+    bottom: 3px;
 }
