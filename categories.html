@@ -8,6 +8,10 @@
 	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/fonts.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/slick.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/ion.rangeSlider.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/jquery.formstyler.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/jquery.formstyler.theme.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/jquery.rateyo.min.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" media="all">
 </head>
@@ -147,8 +151,46 @@
 		</div>
 	</div>
 	<div class="catalog__inner">
-		<aside class="catalog__filter-settings">
-			
+		<aside class="catalog__filter-settings aside-filter">
+			<div class="wraper-block-product">
+				<div class="catalog__filter-tabs-link">
+					<a class="press-tab press-tab--active filter-tabs-link" href="#">Параметры</a>
+					<a class="press-tab filter-tabs-link" href="#">по марке</a>
+				</div>
+
+				<div class="catalog__filter-content">
+					<div class="press-tab-content press-tab-content--active catalog__filter-content-item">
+
+						<form class="catalog__inner-form" action="#">
+							<ul class="catalog__form-list">
+								<li class="catalog__form-list-item-drop">
+									<p class="catalog__form-list-item-title  catalog__form-title-arrow  catalog__form-title-arrow--active">Наличие</p>
+									<div class="catalog__form-list-item-content">
+
+										<div class="catalog__form-list-item-box">
+											<label>
+												<input class="filterStyle" type="checkbox">В наличие
+											</label>
+										</div>
+										
+										<div class="catalog__form-list-item-box">
+											<label>
+												<input class="filterStyle" type="checkbox">Под заказ
+											</label>
+										</div>
+
+									</div>
+								</li>
+								<li class="catalog__form-list-item-drop"></li>
+								<li class="catalog__form-list-item-drop"></li>
+								<li class="catalog__form-list-item"></li>
+							</ul>
+						</form>
+					
+					</div>
+					<div class="press-tab-content catalog__filter-content-item">content-2</div>
+				</div>
+			</div>
 		</aside>
 		<div class="catalog__card-list">
 			<div class="card-product__slider-item">
@@ -470,16 +512,11 @@
 
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/ion.rangeSlider.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/jquery.rateyo.min.js"></script>
 	<script src="js/controlSlide.js"></script>
+	<script src="js/controlFilter.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
-<!-- <div class="wraper-block-product">
-	<div class="block-product__tabs">
-		<a class="press-tab press-tab--active block-product__tabs-link" href="#">запчасти</a>
-	</div>
-
-	<div class="block-product__content-product">
-		<div class="press-tab-content--active block-product__card-product"></div>
-	</div>
-</div> -->

@@ -1123,3 +1123,64 @@ button{
     display: block;
 }
 
+
+
+/* style for filter settings */
+
+.catalog__filter-tabs-link{
+    margin-bottom: 50px;
+}
+
+.filter-tabs-link{
+    font-family: 'SFProDisplay-Bold', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #C4C4C4;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 7px;
+    -webkit-transition: border-bottom 0.3s;
+    transition: border-bottom 0.3s;
+}
+
+.filter-tabs-link:first-child{
+    margin-right: 40px;
+}
+
+.filter-tabs-link.press-tab--active{
+    color: #2F3035;
+    border-bottom: 2px solid #1C62CD; 
+}
+
+
+.catalog__form-list-item-drop{
+    margin-bottom: 40px;
+}
+
+.catalog__form-list-item-title{
+    font-family: 'SFProDisplay-Semibold', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 25px; 
+}
+
+.catalog__form-title-arrow{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.catalog__form-title-arrow::before{
+    content: "";
+    position: absolute;
+    background: url("../../img/logotip/arrowUp.svg")no-repeat;
+    left: 0;
+    top: 6px;
+    width: 12px;
+    height: 7px;
+}
+
+.catalog__form-title-arrow--active::before{
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}

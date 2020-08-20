@@ -1,0 +1,3 @@
+$(function(){
+    $('.filterStyle').styler();
+});
