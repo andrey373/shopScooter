@@ -15,6 +15,14 @@ $(function(){
     $('.card-product__slider-favorites').on('click', function(){
         $(this).toggleClass('card-product__slider-favorites--active');
     });
+
+    // script for btn filter tabs
+    
+    $('.catalog__form-title-arrow').on('click', function(){
+        $(this).toggleClass('catalog__form-title-arrow--active');
+        $(this).next().slideToggle(200);
+    });
+    
 });
 
 
