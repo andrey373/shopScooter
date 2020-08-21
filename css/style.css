@@ -1124,9 +1124,9 @@ button{
 }
 
 
-
+/* ------------------------ */
 /* style for filter settings */
-
+/* -------------------------- */
 .catalog__filter-tabs-link{
     margin-bottom: 50px;
 }
@@ -1167,7 +1167,6 @@ button{
 }
 
 .catalog__form-title-arrow{
-    margin-bottom: 20px;
     position: relative;
 }
 
@@ -1190,16 +1189,32 @@ button{
     transform: rotateX(180deg);
 }
 
+.catalog__form-list-item-content{
+    margin-top: 20px;
+}
+
 .catalog__form-list-item-box{
     display: inline-block;
     font-size: 14px;
     line-height: 17px;
+    cursor: pointer;
+}
+
+.catalog__item-box-label{
+    cursor: pointer;
 }
 
 .catalog__form-list-item-box:first-child{
     margin-right: 50px;
 }
 
+.catalog__form-list-item-separated .catalog__form-list-item-box:not(:last-child){
+ margin-right: 20px;
+} 
+
+/* --------------------------- */
+/* styles for redefining filters */
+/* --------------------------- */
 .jq-checkbox, .jq-radio{
     vertical-align: middle;
     background: #fff;
@@ -1212,11 +1227,18 @@ button{
     margin-right: 10px;
 }
 
-.jq-checkbox.checked{
+.jq-checkbox.checked, .jq-radio.checked{
     background: #1C62CD;
     border: none;
 }
 
+.jq-checkbox.focused, .jq-radio.focused{
+    border: 1px solid #C4C4C4;
+}
+
+.jq-checkbox.focused.checked, .jq-radio.focused.checked{
+    border:none;
+}
 
 .jq-checkbox.checked .jq-checkbox__div{
     width: 100%;
@@ -1228,3 +1250,16 @@ button{
     transform: rotate(0deg);
     background: url("../img/logotip/checked-icon.svg")no-repeat;
 }
+
+.jq-radio.checked .jq-radio__div {
+    width: 100%;
+    height:100%;
+    margin: 3px 0 0 3px;
+    border-radius:0;
+    background:none;
+    -webkit-box-shadow:none;
+    box-shadow:none; 
+}
+
+/* ---------------------- */
+/* ---------------------- */

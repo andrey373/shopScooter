@@ -168,21 +168,61 @@
 									<div class="catalog__form-list-item-content">
 
 										<div class="catalog__form-list-item-box">
-											<label>
+											<label class="catalog__item-box-label">
 												<input class="filterStyle" type="checkbox">В наличие
 											</label>
 										</div>
 										
 										<div class="catalog__form-list-item-box">
-											<label>
+											<label class="catalog__item-box-label">
 												<input class="filterStyle" type="checkbox">Под заказ
 											</label>
 										</div>
 
 									</div>
 								</li>
-								<li class="catalog__form-list-item-drop"></li>
-								<li class="catalog__form-list-item-drop"></li>
+								<li class="catalog__form-list-item-drop">
+									<p class="catalog__form-list-item-title  catalog__form-title-arrow  catalog__form-title-arrow--active">Новинки</p>
+									<div class="catalog__form-list-item-content catalog__form-list-item-separated">
+
+										<div class="catalog__form-list-item-box">
+											<label class="catalog__item-box-label">
+												<input class="filterStyle" type="radio" name="allNewSale" checked>Все
+											</label>
+										</div>
+										
+										<div class="catalog__form-list-item-box">
+											<label class="catalog__item-box-label">
+												<input class="filterStyle" type="radio" name="allNewSale">Новинки
+											</label>
+										</div>
+
+										<div class="catalog__form-list-item-box">
+											<label class="catalog__item-box-label">
+												<input class="filterStyle" type="radio" name="allNewSale">Акции
+											</label>
+										</div>
+
+									</div>
+								</li>
+								<li class="catalog__form-list-item-drop">
+
+									<p class="catalog__form-list-item-title  catalog__form-title-arrow  catalog__form-title-arrow--active">Цена</p>
+									<div class="catalog__form-list-item-content">
+
+										<input type="text" class="js-range-slider" name="my_range" value=""
+										data-type="double"
+										data-min="100000"
+										data-max="500000"
+										data-from="150000"
+										data-to="250000"
+										data-grid="true"
+										/>
+
+									</div>
+
+								</li>
+								
 								<li class="catalog__form-list-item"></li>
 							</ul>
 						</form>
@@ -512,8 +552,8 @@
 
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
-	<script src="js/ion.rangeSlider.min.js"></script>
-	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/ion.rangeSlider.min.js"></script><!--https://github.com/IonDen/ion.rangeSlider -->
+	<script src="js/jquery.formstyler.min.js"></script><!-- https://github.com/Dimox/jQueryFormStyler-->
 	<script src="js/jquery.rateyo.min.js"></script>
 	<script src="js/controlSlide.js"></script>
 	<script src="js/controlFilter.js"></script>

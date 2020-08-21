@@ -22,6 +22,8 @@ $(function(){
         $(this).toggleClass('catalog__form-title-arrow--active');
         $(this).next().slideToggle(200);
     });
+
+    
     
 });
 
