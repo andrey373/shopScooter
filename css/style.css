@@ -1173,7 +1173,7 @@ button{
 .catalog__form-title-arrow::before{
     content: "";
     position: absolute;
-    background: url("../../img/logotip/arrowUp.svg")no-repeat;
+    background: url("../img/logotip/arrowUp.svg")no-repeat;
     left: 0;
     top: 6px;
     width: 12px;
@@ -1261,5 +1261,217 @@ button{
     box-shadow:none; 
 }
 
+.irs{
+    height: 100%;
+}
+
+.irs--flat.irs-with-grid{
+    height: 40px;
+}
+
+.irs--flat .irs-min, .irs--flat .irs-max {
+    font-family: 'Barlow-Regular', sans-serif;
+    top: auto;
+    bottom: 0;
+    padding: 1px 3px;
+    padding-left: 26px;
+    color: #2F3035;
+    font-size: 14px;
+    line-height: 17px;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    text-shadow: none;
+    background-color:transparent;
+    border-radius: 0;
+}
+
+.irs--flat .irs-min::before,
+.irs--flat .irs-max::before{
+    content: "";
+    font-family: 'SFProDisplay-Regular', sans-serif;
+    position: absolute;
+    width: 14px;
+    height: 18px;
+    top: 1px;
+    left: 0;
+    color:#C4C4C4; 
+}
+
+.irs--flat .irs-min::before{
+    content: "от";
+}
+
+.irs--flat .irs-max::before{
+    content: "до";
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single{
+    display: none;
+}
+
+.irs--flat .irs-min, 
+.irs--flat .irs-max{
+    visibility: visible !important;
+}
+
+.irs--flat .irs-line {
+    top: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+}
+
+.irs--flat .irs-bar {
+    top: -1px;
+    height: 3px;
+    background-color: #1C62CD;
+}
+
+.irs--flat .irs-handle {
+    top: 0;
+    width: 7px;
+    height: 7px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.irs--flat .irs-handle>i:first-child{
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: -3px;
+    height: 100%;
+    width: 100%;
+    margin-left: -1px;
+    background-color: #1C62CD;
+    border-radius: 50%;
+}
+
+.irs--flat .irs-handle.state_hover>i:first-child,.irs--flat .irs-handle:hover>i:first-child{background-color:#1C62CD;}
+
+.irs-with-grid .irs-grid{
+    display: none;
+}
+.irs--flat .irs-grid-pol,
+.irs-grid-pol.small{
+    display: none;
+}
+
+.catalog__form-select-item{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 2px solid #C4C4C4;
+    margin-bottom: 25px;
+}
+
+.catalog__form-select-item-title{
+    font-family: 'SFProDisplay-Semibold', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 25px;
+}
+
+.jq-selectbox__select {
+    font-family: 'Barlow-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #48494D;
+    padding: 0 30px 0 10px;
+    border:1px solid transparent;
+    border-bottom-color:transparent;
+    border-radius:0;
+    background: none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    text-shadow:none;
+}
+
+.jq-selectbox__select-text{
+    line-height: 17px !important;
+}
+
+.catalog__form-item-selected,
+.jq-selectbox__trigger{
+    border: 0;
+}
+
+.catalog__form-item-selected{
+    width: 70px;
+}
+
+.catalog__form-item-selected.focused.opened.dropdown {
+    border: none;
+}
+
+.jq-selectbox__select-text{
+    line-height: 32px;
+}
+
+.jq-selectbox__trigger-arrow {
+    position: absolute;
+    top: 6px;
+    right: 12px;
+    width: 12px;
+    height: 8px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background: url("../img/logotip/arrowUp.svg")no-repeat;
+}
+
+.jq-selectbox__select:hover {
+    background: transparent;
+}
+
+.jq-selectbox__select:active {
+	background: #fff;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.jq-selectbox__dropdown{
+    font-family: 'Barlow-Regular', sans-serif;
+    border-radius: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 14px;
+    line-height: 17px;
+    bottom: auto !important;
+    top: 20px !important;
+}
+
+.jq-selectbox li{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.jq-selectbox li.selected {
+    background-color: rgba(107, 126, 172, 0.05);
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.jq-selectbox.focused .jq-selectbox__select {
+	border: 1px solid transparent;
+}
+
+.jq-selectbox li:hover{
+    background-color: rgba(107, 126, 172, 0.05);
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+
 /* ---------------------- */
 /* ---------------------- */
+
+

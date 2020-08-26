@@ -5,6 +5,7 @@ $(function(){
 
 
     // script for input type range
-    $(".js-range-slider").ionRangeSlider();
+    $(".js-range-slider").ionRangeSlider({
+    });
 
 });
