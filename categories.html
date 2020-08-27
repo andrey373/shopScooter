@@ -122,7 +122,7 @@
 			<button class="catalog__filter-items-btn" type="button">еще</button>
 		</div>
 		<div class="catalog__filter-select">
-			<select class="catalog__filter-select-list">
+			<select class="catalog__filter-select-list filterStyle">
 				<option selected value="popular">По полулярности</option>
 				<option  value="По полулярности">По полулярности</option>
 				<option  value="По полулярности">По полулярности</option>
@@ -257,10 +257,147 @@
 										</select>
 									</div>
 									
-									
-
 								</li>
+
+								<li class="catalog__form-list-item-drop brand-item-drop">
+									<p class="catalog__form-list-item-title  catalog__form-title-arrow  catalog__form-title-arrow--active">Бренд</p>
+									<div class="catalog__form-list-item-content brend-item-content">
+
+										<div class="catalog__form-list-item-box brend-item-box">
+											<label class="catalog__item-box-label">
+												<input class="filterStyle" checked type="checkbox">BRP
+											</label>
+										</div>
+										
+										<div class="catalog__form-list-item-box brend-item-box">
+											<label class="catalog__item-box-label">
+												<input class="filterStyle" checked type="checkbox">Spark 2
+											</label>
+										</div>
+
+										<div class="catalog__form-list-item-box brend-item-box">
+											<label class="catalog__item-box-label">
+												<input class="filterStyle" type="checkbox">Spark 3
+											</label>
+										</div>
+
+										<button class="brend-btn"><span class="brend-btn-text">Показать еще</span></button>
+
+									</div>
+								</li>
+
+								<li class="catalog__form-list-item-drop">
+									<p class="catalog__form-list-item-title  catalog__form-title-arrow  catalog__form-title-arrow--active">Модель</p>
+									<div class="catalog__form-list-item-content brend-item-content">
+
+										<input class="model-item-box" type="text" placeholder="Введите модель">
+
+										<div class="catalog__form-list-item-box brend-item-box">
+											<label class="catalog__item-box-label">
+												<input class="filterStyle" checked type="checkbox">Sea-doo Spark 2
+											</label>
+										</div>
+										
+										<div class="catalog__form-list-item-box brend-item-box">
+											<label class="catalog__item-box-label">
+												<input class="filterStyle" checked type="checkbox">SeaDoo Spark 90 
+											</label>
+										</div>
+
+										<div class="catalog__form-list-item-box brend-item-box">
+											<label class="catalog__item-box-label">
+												<input class="filterStyle" type="checkbox">SeaDoo GTI 155
+											</label>
+										</div>
+
+										<div class="catalog__form-list-item-box brend-item-box">
+											<label class="catalog__item-box-label">
+												<input class="filterStyle" type="checkbox">SeaDoo GTR 230
+											</label>
+										</div>
+
+										<button class="brend-btn"><span class="brend-btn-text">Показать еще</span></button>
+
+									</div>
+								</li>
+
+								<li class="catalog__form-list-item-drop">
+									<p class="catalog__form-list-item-title  catalog__form-title-arrow  catalog__form-title-arrow--active">Акции</p>
+									<div class="catalog__form-list-item-content  sale-item-content">
+
+										<div class="catalog__form-list-item-box  sale-item-box checkedSale">
+											<label class="catalog__item-box-label">
+												<input class="sale-item-box-btn  filterStyle" type="checkbox" checked>
+												<span>SALE</span> 
+											</label>
+										</div>
+										
+										<div class="catalog__form-list-item-box  sale-item-box">
+											<label class="catalog__item-box-label">
+												<input class="sale-item-box-btn filterStyle" type="checkbox">
+												<span>NEW</span> 
+											</label>
+										</div>
+
+										<div class="catalog__form-list-item-box  sale-item-box">
+											<label class="catalog__item-box-label">
+												<input class="sale-item-box-btn filterStyle" type="checkbox">
+												<span>HIT</span> 
+											</label>
+										</div>
+										
+										<div class="catalog__form-list-item-box   sale-item-box">
+											<label class="catalog__item-box-label">
+												<input class="sale-item-box-btn filterStyle" type="checkbox">
+												<span>ДИЛЕР</span> 
+											</label>
+										</div>
+									</div>
+								</li>
+
+								<li class="catalog__form-list-item-drop brand-item-drop">
+									<p class="catalog__form-list-item-title  catalog__form-title-arrow  catalog__form-title-arrow--active">Страны</p>
+									<div class="catalog__form-list-item-content brend-item-content">
+
+										<div class="catalog__form-list-item-box brend-item-box">
+											<label class="catalog__item-box-label">
+												<input class="filterStyle" checked type="checkbox">Россия
+											</label>
+										</div>
+										
+										<div class="catalog__form-list-item-box brend-item-box">
+											<label class="catalog__item-box-label">
+												<input class="filterStyle" checked type="checkbox">Германия
+											</label>
+										</div>
+
+										<div class="catalog__form-list-item-box brend-item-box">
+											<label class="catalog__item-box-label">
+												<input class="filterStyle" type="checkbox">Китай
+											</label>
+										</div>
+
+										<div class="catalog__form-list-item-box brend-item-box">
+											<label class="catalog__item-box-label">
+												<input class="filterStyle" type="checkbox">CША
+											</label>
+										</div>
+
+										<button class="brend-btn"><span class="brend-btn-text">Показать еще</span></button>
+
+									</div>
+								</li>
+
 							</ul>
+
+							<input class="btn-form__send" type="submit" value="ВЫБРАТЬ">
+							<div class="additionally-filter">
+								<p class="additionally-filter__title additionally-filter__title-arrow">Дополнительные параметры</p>
+								<div class="additionally-filter__content">
+									content
+								</div>
+							</div>
+							<input class="btn-form__reset" type="reset" value="Сбросить фильтр">
 						</form>
 					
 					</div>

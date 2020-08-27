@@ -8,4 +8,10 @@ $(function(){
     $(".js-range-slider").ionRangeSlider({
     });
 
+    //  script for filter btn SALE
+    $('.sale-item-box').on('click', function(){
+        $('.sale-item-box').removeClass('checkedSale');
+        $(this).toggleClass('checkedSale');
+    });
+
 });

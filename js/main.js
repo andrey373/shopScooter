@@ -23,6 +23,12 @@ $(function(){
         $(this).next().slideToggle(200);
     });
 
+    $('.additionally-filter__title-arrow').on('click', function(){
+        $(this).toggleClass('additionally-filter__title-arrow--active');
+        $(this).next().slideToggle(200);
+    });
+
+
     
     
 });
