@@ -1489,19 +1489,12 @@ button{
     line-height: 36px;
     opacity: 0.6;
     margin-top: 10px;
-    margin-bottom: 5px;
-    position: relative;
+    margin-bottom: 5px;    
 }
 
-.card-block__price-old::after{
-    content: "";
-    position: absolute;
-    top: 0; 
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("../img/logotip/old-line.svg")no-repeat;    
-    background-position: center;
+.card-block__price-old-line{
+    background: url("../img/logotip/old-line.svg")no-repeat;
+    background-size: cover;
 }
 
 .card-block__price-new{
@@ -1614,5 +1607,124 @@ button{
     color: #fff;
     padding: 15px 50px;
     cursor: pointer;
+}
+
+.card-block__inner-item-img.card-product-sale::before{
+    width: 95px;
+    height: 45px;
+    letter-spacing: 0.12em;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 13px 25px;
+    border-radius: 3px;
+}
+
+
+/* style for section description and delivery condition */
+
+.about-product__tabs{
+    background: #F0F0F4;
+    padding: 17px 33px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.about-product__tab-link{
+    padding: 5px;
+    padding-bottom: 3px;
+    color: rgba(47, 48, 53, 0.6);
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.about-product__tab-link.press-tab--active{
+    color: rgba(47, 48, 53, 1);
+    border-bottom: 2px solid #1C62CD;
+}
+
+.about-product__form-panel{
+    margin-bottom: 50px;
+}
+
+.about-product__form-panel-serch,
+.about-product__form-panel-radio{
+    color: rgba(47, 48, 53, 0.7);
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.about-product__input-panel-serch{
+    min-width: 310px;
+    border-radius: 3px;
+    border: none;
+    padding: 9px 28px 9px 17px;
+    position: relative;
+    background:#F0F0F4 url("../../img/logotip/Search.svg")no-repeat;
+    background-position: 95% 55%;
+    margin-right: 155px;
+    margin-left: 20px;
+}
+
+.about-product__form-panel-radio{
+    cursor: pointer;
+}
+
+.about-product__form-panel-radio + .about-product__form-panel-radio{
+    margin-left: 55px; 
+}
+
+.about-product__form-panel-radio .jq-checkbox, .jq-radio{
+    vertical-align: -10%;
+    border: 1px solid #c4c4c4;
+}
+
+.about-product__form-panel-radio .jq-radio.checked{
+    border: 2px solid #1C62CD;
+    background: none;
+}
+
+.about-product__form-panel-radio .jq-radio.checked .jq-radio__div{
+    background: #1C62CD;
+    margin: 2px 0 0 2px;
+    width: 6px;
+    height: 6px;
+}
+
+.about-product__form-list{
+    width: 100%;
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(47, 48, 53, 0.7);
+    border-collapse: collapse;
+}
+
+.about-product__row-title{
+    text-align: left;
+    vertical-align: top;
+    color: rgb(47, 48, 53);
+    font-size: 20px;
+    line-height: 24px;
+    height: 30px;
+}
+
+.about-product__table-row{
+    height: 90px;
+    border-bottom: 1px solid rgba(47, 48, 53, 0.1);
+}
+
+.about-product__table-btn{
+    background: #1C62CD;
+    border-radius: 3px;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.12em;
+    color: #fff;
+    padding: 10px 40px;
+    border: none;
+}
+
+.about-product__col-btn{
+    text-align: right;
 }
 
