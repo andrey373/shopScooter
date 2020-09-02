@@ -26,7 +26,7 @@ body {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 a{
     color:  #2F3035;
@@ -67,7 +67,9 @@ button{
     font-family: 'SFProDisplay-Bold', sans-serif;
 }
 
-.mobile-menu-btn{
+.mobile-menu-btn,
+.menu-mobile-list,
+.menu-mobile__list-line{
     display: none;
 }
 
@@ -204,6 +206,7 @@ button{
 }
 
 .block-slider__inner{
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -222,8 +225,8 @@ button{
 
 .block-slider__slider-item{
     display: block;
-    width: 870px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
 }
 
 .block-slider__slider-img{
@@ -239,8 +242,6 @@ button{
 .block-product__btn-slide{
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
     z-index: 10;
     background: none;
     border: 0;
@@ -612,7 +613,7 @@ button{
 }
 
 .block-product__tabs{
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .block-product__tabs-link + .block-product__tabs-link{
@@ -633,9 +634,17 @@ button{
     border-bottom: 2px solid #1C62CD;
 }
 
+.block-product__content-product .slick-list{
+    padding: 20px 0;
+}
+
+.card-product__slider{
+    padding: 0;
+}
+
 .wraper__slider-link{
     position: relative;
-    width: 271px;
+    width: 270px;
 }
 
 .card-product__slider-link{
@@ -824,6 +833,12 @@ button{
     line-height: 0;
 }
 
+.baner__link,
+.baner__link-img{
+    width: 100%;
+    height: 100%;
+}
+
 /* style for block product recommend*/
 
 .block-product-two{
@@ -957,6 +972,22 @@ button{
 
 .social-list__item + .social-list__item{
     margin-left: 30px;
+}
+
+.social-list__item{
+    width: 30px;
+    height: 30px;
+}
+
+.social-list__item-link{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}    
+
+.social-list__item-img{
+    width: 100%;
+    height: 100%;
 }
 
 

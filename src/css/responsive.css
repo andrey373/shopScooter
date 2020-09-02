@@ -28,8 +28,18 @@
     }
 
     .menu-mobile-list{
+        display: block;
         width: 240px;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+        transform: translateX(-255px);
+        transition: transform 0.5s;
+        position: absolute;
+        background-color: #fff;
+        z-index: 100;
+    }
+
+    .menu-mobile-list--active{
+        transform: translateX(0);
     }
 
     .menu-mobile-list__item{
@@ -48,10 +58,217 @@
         left: 10px;
         bottom: 0;
     }    
+
+    .menu-mobile__list-line-wraper{
+        background-color: #F0F0F4;
+        overflow-x: scroll;
+    }
+    .menu-mobile__list-line{
+        display: flex;
+        width: 450px;
+        font-family: 'SFProDisplay-Bold', sans-serif;
+        padding: 15px 10px;
+    }
+
 }
 
 @media(max-width: 650px){
     .location{
         display: none;
     }
+
+    .menu__list-item + .menu__list-item{
+        padding-left: 15px;
+    }
+}
+
+
+/* responsiv block slide */
+
+@media(max-width: 1170px){
+    .block-slider{
+        padding-top: 25px;
+    }
+
+    .block-slider__slider{
+        max-width: 100%;
+    }
+    
+    .sale-card{
+        display: none;
+    }
+}
+
+@media(max-width: 770px){
+    .block-slider{
+        padding-top: 25px;
+    }
+
+    .container-block-slider{
+       padding:  0;
+    }
+
+    .slick-dots{
+        bottom: 20px;
+    }
+
+    .block-slider__inner{
+        flex-direction: column;
+        align-items: center;    
+    }
+
+    .sale-card{
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+/* responsive section search */
+@media(max-width: 770px){
+    
+    .search-block__tabs-btn-wraper{
+        overflow-x: scroll;
+    }
+
+    .search-block__tabs-btn{
+        width: 730px;
+    }
+
+}
+
+@media(max-width: 450px){
+    
+    .content-item__form{
+        flex-direction: column;    
+    }
+
+    .content-item__form-btn{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
+
+/* responsive section categories */
+
+@media(max-width: 1160px){
+    .categories-inner{
+        max-width: 900px;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+}
+
+@media(max-width: 800px){
+    .categories-inner{
+        max-width: 700px;
+    }
+}
+
+@media(max-width: 400px){
+    .categories-inner__item{
+        padding: 20px 10px 15px;
+    }
+}
+
+/* responsive section product slider */
+
+@media(max-width: 1250px){
+    
+    .block-product__inner-title{
+        text-align: center;
+    }
+
+    .wraper-block-product{
+        max-width: 870px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .block-product__tabs-wraper{
+        overflow-x: scroll;
+    }
+
+    .block-product__tabs{
+        width: 710px;
+    }
+}
+
+@media(max-width: 950px){
+    
+    .wraper-block-product{
+        max-width: 600px;
+    }
+
+    .block-product-two{
+        padding-bottom: 60px;
+    }
+
+}
+
+@media(max-width: 700px){
+    
+    .wraper-block-product{
+        max-width: 290px;
+    }
+
+    .card-product__slider-item{
+        padding: 0 10px;
+    }
+
+    .card-product__slider .slick-dots{
+        bottom: -25px;
+    }
+
+    .card-product__slider .slick-dots button{
+        background-color: #c4c4c4;
+        width: 15px;
+        height: 15px;
+    }
+
+    .card-product__slider .slick-active > button{
+        background-color: #1C62CD;
+    }
+
+    .block-product__show-more-link{
+        margin-top: 50px;
+    }  
+}
+
+/*  responsive block  footer */
+
+@media(max-width: 950px){
+    
+    .page-footer__top-inner{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .page-footer__top-item--social{
+        width: 100%;
+    }
+
+    .social-list{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 650px){
+
+    .page-footer__top-title-first{
+        text-align: center;
+    }
+
+    .page-footer__top-inner .page-footer__top-item{
+        width: 100%;
+        max-width: none;  
+    }
+
+    .page-footer__top-item:not(:first-child){
+        margin-top: 20px;
+    }
+
+
 }

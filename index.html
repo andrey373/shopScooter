@@ -149,6 +149,21 @@
 				</a>
 			</li>
 		</ul>
+
+		<div class="menu-mobile__list-line-wraper">
+			<ul class="menu-mobile__list-line">
+				<li class="menu__list-item">
+					<a class="menu__list-link" href="#">Магазины</a>
+				</li>
+				<li class="menu__list-item">
+					<a class="menu__list-link" href="#">Акции</a>
+				</li>
+				<li class="menu__list-item">
+					<a class="menu__list-link" href="#">Доставка и оплата</a>
+				</li>			
+			</ul>
+		</div>
+		
 		<div class="page-header__bottom">
 			<div class="container">
 					<ul class="menu-categories">
@@ -183,8 +198,8 @@
 
 	<!--  start section slide -->
 
-	<!-- <div class="block-slider">
-		<div class="container">
+	 <div class="block-slider">
+		<div class="container container-block-slider">
 			<div class="block-slider__inner">
 				<div class="block-slider__slider">
 					<a class="block-slider__slider-item" href="#">
@@ -224,18 +239,20 @@
 				</a>
 			</div>
 		</div>
-	</div> -->
+	</div> 
 
 
 <!-- section search and tabs -->
-<!--
+
 <div class="search-block">
 	<div class="container">
 		<div class="search-block__inner">
-			<div class="search-block__tabs-btn">
-				<a class="press-tab press-tab--active tabs-btn__link" data-search-tab="tab-num" href="#tab-num">Поиск по номеру</a>
-				<a class="press-tab tabs-btn__link" data-search-tab="tab-brand" href="#tab-brand">Поиск по марке</a>
-				<a class="press-tab tabs-btn__link" data-search-tab="tab-name" href="#tab-name">Поиск по названию товара</a>
+			<div class="search-block__tabs-btn-wraper">
+				<div class="search-block__tabs-btn">
+					<a class="press-tab press-tab--active tabs-btn__link" data-search-tab="tab-num" href="#tab-num">Поиск по номеру</a>
+					<a class="press-tab tabs-btn__link" data-search-tab="tab-brand" href="#tab-brand">Поиск по марке</a>
+					<a class="press-tab tabs-btn__link" data-search-tab="tab-name" href="#tab-name">Поиск по названию товара</a>
+				</div>
 			</div>
 			<div class="search-block__content">
 				<div id="tab-num" class="press-tab-content press-tab-content--active search-block__content-item">
@@ -260,9 +277,9 @@
 		</div>
 	</div>
 </div>
--->
+
 <!--  section categories -->
-<!--
+
 <div class="categories">
 	<div class="container">
 		<div class="categories-inner">
@@ -323,24 +340,26 @@
 		</div>
 	</div>
 </div>
--->
+
 
 <!--   section of popular product -->
-<!--
+
 <div class="block-product">
 	<div class="container">
 		<div class="block-product__inner">
 			<h3 class="block-product__inner-title">Популярные товары</h3>
 			<div class="wraper-block-product">
-				<div class="block-product__tabs">
-					<a class="press-tab press-tab--active block-product__tabs-link" href="#cardLink1">запчасти</a>
-					<a class="press-tab block-product__tabs-link" href="#cardLink2">моторы</a>
-					<a class="press-tab block-product__tabs-link" href="#cardLink3">шины</a>
-					<a class="press-tab block-product__tabs-link" href="#cardLink4">электроника</a>
-					<a class="press-tab block-product__tabs-link" href="#cardLink5">инструменты</a>
-					<a class="press-tab block-product__tabs-link" href="#cardLink6">аксессуары</a>
+				<div class="block-product__tabs-wraper">
+					<div class="block-product__tabs">
+						<a class="press-tab press-tab--active block-product__tabs-link" href="#cardLink1">запчасти</a>
+						<a class="press-tab block-product__tabs-link" href="#cardLink2">моторы</a>
+						<a class="press-tab block-product__tabs-link" href="#cardLink3">шины</a>
+						<a class="press-tab block-product__tabs-link" href="#cardLink4">электроника</a>
+						<a class="press-tab block-product__tabs-link" href="#cardLink5">инструменты</a>
+						<a class="press-tab block-product__tabs-link" href="#cardLink6">аксессуары</a>
+					</div>
 				</div>
-
+				
 				<div class="block-product__content-product">
 					<div id="cardLink1" class="press-tab-content press-tab-content--active block-product__card-product">
 						<div class="card-product__slider">
@@ -642,34 +661,38 @@
 		</div>
 	</div>
 </div>
--->
+
 <!--  block banner -->
-<!--
+
 <div class="baner">
 	<div class="container">
 		<a class="baner__link" href="#">
-			<img src="img/background-img/baner.jpg" alt="picture of baner">
+			<picture>
+				<source srcset="img/background-img/mobile-baner.jpg" media="(max-width:770px)"> 
+				<img class="baner__link-img" src="img/background-img/baner.jpg" alt="picture of baner">
+			</picture>
 		</a>
 	</div>
 </div>
--->
+
 
 <!-- block product recommend -->
-<!--
+
 <div class="block-product block-product-two">
 	<div class="container">
 		<div class="block-product__inner">
 			<h3 class="block-product__inner-title">С этим товаром покупают</h3>
 			<div class="wraper-block-product">
-				<div class="block-product__tabs">
-					<a class="press-tab press-tab--active block-product__tabs-link" href="#recommendCardLink1">запчасти</a>
-					<a class="press-tab block-product__tabs-link" href="#recommendCardLink2">моторы</a>
-					<a class="press-tab block-product__tabs-link" href="#recommendCardLink3">шины</a>
-					<a class="press-tab block-product__tabs-link" href="#recommendCardLink4">электроника</a>
-					<a class="press-tab block-product__tabs-link" href="#recommendCardLink5">инструменты</a>
-					<a class="press-tab block-product__tabs-link" href="#recommendCardLink6">аксессуары</a>
+				<div class="block-product__tabs-wraper">
+					<div class="block-product__tabs">
+						<a class="press-tab press-tab--active block-product__tabs-link" href="#recommendCardLink1">запчасти</a>
+						<a class="press-tab block-product__tabs-link" href="#recommendCardLink2">моторы</a>
+						<a class="press-tab block-product__tabs-link" href="#recommendCardLink3">шины</a>
+						<a class="press-tab block-product__tabs-link" href="#recommendCardLink4">электроника</a>
+						<a class="press-tab block-product__tabs-link" href="#recommendCardLink5">инструменты</a>
+						<a class="press-tab block-product__tabs-link" href="#recommendCardLink6">аксессуары</a>
+					</div>
 				</div>
-
 				<div class="block-product__content-product">
 					<div id="recommendCardLink1" class="press-tab-content press-tab-content--active block-product__card-product">
 						<div class="card-product__slider">
@@ -968,15 +991,15 @@
 		</div>
 	</div>
 </div>
--->
+
 <!--   section footer -->
-<!--
+
 <footer class="page-footer">
 	<div class="container">
 		<div class="page-footer__top">
 			<div class="page-footer__top-inner">
 				<div class="page-footer__top-item page-footer__top-item-first">
-					<h6 class="page-footer__top-item-title">
+					<h6 class="page-footer__top-item-title page-footer__top-title-first">
 						Подпишитесь на нашу рассылку 
 						и узнавайте о акция быстрее
 					</h6>
@@ -1007,26 +1030,26 @@
 						<li class="footer__list-item"><a href="#">Новости</a></li>
 					</ul>
 				</div>
-				<div class="page-footer__top-item">
+				<div class="page-footer__top-item page-footer__top-item--social">
 					<ul class="social-list">
 						<li class="social-list__item">
-							<a href="#">
-								<img src="img/logotip/instagram.svg" alt="social icon">
+							<a class="social-list__item-link" href="#">
+								<img class="social-list__item-img" src="img/logotip/instagram.svg" alt="social icon">
 							</a>
 						</li>
 						<li class="social-list__item">
-							<a href="#">
-								<img src="img/logotip/vk.svg" alt="social icon">
+							<a class="social-list__item-link" href="#">
+								<img class="social-list__item-img" src="img/logotip/vk.svg" alt="social icon">
 							</a>
 						</li>
 						<li class="social-list__item">
-							<a href="#">
-								<img src="img/logotip/facebook.svg" alt="social icon">
+							<a class="social-list__item-link" href="#">
+								<img class="social-list__item-img" src="img/logotip/facebook.svg" alt="social icon">
 							</a>
 						</li>
 						<li class="social-list__item">
-							<a href="#">
-								<img src="img/logotip/youtube.svg" alt="social icon">
+							<a class="social-list__item-link" href="#">
+								<img class="social-list__item-img" src="img/logotip/youtube.svg" alt="social icon">
 							</a>
 						</li>
 					</ul>
@@ -1039,7 +1062,7 @@
 		</div>
 	</div>
 </footer>
- -->
+
 
 
 	<script src="js/jquery-3.4.1.min.js"></script>

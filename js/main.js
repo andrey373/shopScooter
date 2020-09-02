@@ -29,8 +29,12 @@ $(function(){
     });
 
 
-    
-    
+    // script for mobile btn
+
+    $('.mobile-menu-btn').click(function(){
+        $('.menu-mobile-list').toggleClass('menu-mobile-list--active');
+    });
+
 });
 
 
