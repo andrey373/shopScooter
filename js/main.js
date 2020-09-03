@@ -9,7 +9,7 @@ $(function(){
         
         $($(this).attr('href')).addClass('press-tab-content--active');
 
-        $('.card-product__slider').slick('setPosition')
+        $('.card-product__slider').slick('setPosition');
     })
     
     //  script for button heart in card product
