@@ -886,6 +886,13 @@ button{
     bottom: 3px;
 }
 
+.breadcrumbs__list{
+    display:flex;
+    flex-wrap: nowrap;
+    min-width: 700px;
+}
+
+
 /* style for catalog */
 
 .catalog{
@@ -915,6 +922,7 @@ button{
     background: #F0F0F4;
     border-radius: 3px;
     cursor: pointer;
+    width: max-content;
 }
 
 .catalog__filter-items-btn + .catalog__filter-items-btn{
@@ -973,11 +981,13 @@ button{
 }
 
 .catalog__filter-settings{
+    width: 290px;
     min-width: 290px;
     margin-right: 10px;
 }
 
 .catalog__card-list{
+    max-width: 870px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1682,7 +1692,7 @@ button{
 }
 
 .about-product__form-panel{
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .about-product__form-panel-serch,
@@ -1735,6 +1745,7 @@ button{
     line-height: 18px;
     color: rgba(47, 48, 53, 0.7);
     border-collapse: collapse;
+    margin-top: 40px;
 }
 
 .about-product__row-title{
