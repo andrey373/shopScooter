@@ -17,6 +17,11 @@ let concatFileStyle = [
     './src/css/responsive.css'
 ];
 
+let minifyFileStyle = [
+    './css/style.css',
+    './css/responsive.css'
+];
+
 let concatFileScript = [
     './js/main.js',
     './js/controlSlide.js'
@@ -35,7 +40,7 @@ gulp.task('compileStyle', () => {
 });
 
 gulp.task('concatStyle', () => {
-    return gulp.src(concatFileStyle)
+    return gulp.src(minifyFileStyle)
 
     .pipe(cleanCSS({
         compatibility: 'ie8',

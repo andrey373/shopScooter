@@ -1,49 +1,49 @@
 @font-face{
     font-family: 'SFProDisplay-Regular';
-    src: url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
-         url('../fonts/SFProDisplay-Regular.woff') format('woff');
+    src: url('./fonts/SFProDisplay-Regular.woff2') format('woff2'),
+         url('./fonts/SFProDisplay-Regular.woff') format('woff');
     font-style: normal;
     font-display: swap;
 }
 
 @font-face{
     font-family: 'SFProDisplay-Bold';
-    src: url('../fonts/SFProDisplay-Bold.woff2') format('woff2'),
-         url('../fonts/SFProDisplay-Bold.woff') format('woff');
+    src: url('./fonts/SFProDisplay-Bold.woff2') format('woff2'),
+         url('./fonts/SFProDisplay-Bold.woff') format('woff');
     font-style: normal;
     font-display: swap;
 }
 
 @font-face{
     font-family: 'SFProDisplay-Medium';
-    src: url('../fonts/SFProDisplay-Medium.woff2') format('woff2'),
-         url('../fonts/SFProDisplay-Medium.woff') format('woff');
+    src: url('./fonts/SFProDisplay-Medium.woff2') format('woff2'),
+         url('./fonts/SFProDisplay-Medium.woff') format('woff');
     font-style: normal;
     font-display: swap;
 }
 
 @font-face{
     font-family: 'SFProDisplay-Semibold';
-    src: url('../fonts/SFProDisplay-Semibold.woff2') format('woff2'),
-         url('../fonts/SFProDisplay-Semibold.woff') format('woff');
+    src: url('./fonts/SFProDisplay-Semibold.woff2') format('woff2'),
+         url('./fonts/SFProDisplay-Semibold.woff') format('woff');
     font-style: normal;
     font-display: swap;
 }
 
 @font-face{
     font-family: 'Barlow-Regular';
-    src: url('../fonts/Barlow/Barlow-Regular.woff2') format('woff2'),
-         url('../fonts/Barlow/Barlow-Regular.woff') format('woff'),
-         url('../fonts/Barlow/Barlow-Regular.ttf') format('ttf');
+    src: url('./fonts/Barlow/Barlow-Regular.woff2') format('woff2'),
+         url('./fonts/Barlow/Barlow-Regular.woff') format('woff'),
+         url('./fonts/Barlow/Barlow-Regular.ttf') format('ttf');
     font-style: normal;
     font-display: swap;     
 }
 
 @font-face{
     font-family: 'Barlow-Bold';
-    src: url('../fonts/Barlow/Barlow-Bold.woff2') format('woff2'),
-         url('../fonts/Barlow/Barlow-Bold.woff') format('woff'),
-         url('../fonts/Barlow/Barlow-Bold.ttf') format('ttf');
+    src: url('./fonts/Barlow/Barlow-Bold.woff2') format('woff2'),
+         url('./fonts/Barlow/Barlow-Bold.woff') format('woff'),
+         url('./fonts/Barlow/Barlow-Bold.ttf') format('ttf');
     font-style: normal;
     font-display: swap;     
 }
